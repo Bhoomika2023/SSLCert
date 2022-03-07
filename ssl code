@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5CGRB9J');</script>
+<!-- End Google Tag Manager -->
+
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<meta content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+<link href='/assets/favi-medium-d7e193a34334b5d972e7c8e636bec9ef4b38fb36cd572d306f614edaa1055cdb.png' rel='icon' sizes='32x32'>
+<link href='/assets/favi-large-96e849aab08931416becc2318ae9418a3f39ea1e39a1ad9cf7a84c968fd10037.png' rel='apple-touch-icon-precomposed' sizes='64x64'>
+<title>Check SSL Certificate</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="t9H0yXRgql9yXa4Y8mik6uKlJjSGRUvws4y1+UeXuirsS1TmapjVSu5dGtMc8SNcqZ+aLhXq1M2Y1d2+ogCCTQ==" />
+<link rel="stylesheet" media="all" href="/assets/application-9882b444b5d95f8997282f43bf6f0d17c2d728e539c46643d49766e0a033cfb8.css" data-turbolinks-track="true" />
+<link rel="stylesheet" media="all" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" data-turbolinks-track="true" />
+<script src="https://kit.fontawesome.com/3ba9d5a91f.js" crossorigin="anonymous"></script>
+<script src="/assets/application-426bddabbcf23ce20dd98235156b6e8560acf84aab71ebe090891c8f1e38dbcb.js" data-turbolinks-track="true"></script>
+
+</head>
+<body class='ssl_checkers ssl_checkers-index currency-usd'>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CGRB9J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class='sb-site-container'>
+<div class='boxed'>
+<header class='hidden-xs header-full' id='header-full-top'>
+<div class='container'>
+<a class='header-full-logo' href='/'>
+<i class="fak fa-geocerts-logo fa-4x"></i>
+</a>
+<a class='title-overlay' href='/'></a>
+<div class='header-full-title'>
+<p class='company-name animated fadeInRight'>
+<a href='/'>
+geocerts
+<span>ssl</span>
+</a>
+</p>
+<p class='animated fadeInRight'>
+<a href="/">SSL Made Simple</a>
+</p>
+</div>
+<nav class='top-nav'>
+<div class='dropdown animated fadeInDown animation-delay-11' id='currency-dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+<img class="currency-flag" src="/assets/flags/4x3/usd-c70ba1cb67cc649da2b1f5dc4a26891437d8bba2cc098c88461e6bfc23949d9e.svg" alt="Usd" />
+US Dollars
+<i class='fa fa-caret-down'></i>
+</a>
+<ul class='dropdown-menu'>
+<li>
+<a href="/currency?currency=USD&amp;return_to=%2Fssl-checker"><img class="currency-flag" src="/assets/flags/4x3/usd-c70ba1cb67cc649da2b1f5dc4a26891437d8bba2cc098c88461e6bfc23949d9e.svg" alt="Usd" />
+US Dollars
+</a></li>
+<li>
+<a href="/currency?currency=EUR&amp;return_to=%2Fssl-checker"><img class="currency-flag" src="/assets/flags/4x3/eur-22b2da52fff5dea0b953370431cef82c80204525a980dca3239ac27c8583b665.png" alt="Eur" />
+Euro
+</a></li>
+<li>
+<a href="/currency?currency=GBP&amp;return_to=%2Fssl-checker"><img class="currency-flag" src="/assets/flags/4x3/gbp-825310f9bcc8892559317bfc87fc28d5d7bad06c02d562b5740aafcf4b040803.svg" alt="Gbp" />
+British Pounds
+</a></li>
+<li>
+<a href="/currency?currency=AUD&amp;return_to=%2Fssl-checker"><img class="currency-flag" src="/assets/flags/4x3/aud-213bcc5e8c0c7defccd96f191f39e53f873da8129e55d230faafdd683d4168f9.svg" alt="Aud" />
+Australian Dollars
+</a></li>
+<li>
+<a href="/currency?currency=CAD&amp;return_to=%2Fssl-checker"><img class="currency-flag" src="/assets/flags/4x3/cad-5bda905693ffed32df95f79a8eeac1fbf062630de05f48875e109c35681e2331.svg" alt="Cad" />
+Canadian Dollars
+</a></li>
+<li>
+<a href="/currency?currency=INR&amp;return_to=%2Fssl-checker"><img class="currency-flag" src="/assets/flags/4x3/inr-cbc15f5fb40df22adf2b3792eb6c1d359e1a7affb44318a5a779943fc7299d45.svg" alt="Inr" />
+Indian Rupees
+</a></li>
+<li>
+<a href="/currency?currency=JPY&amp;return_to=%2Fssl-checker"><img class="currency-flag" src="/assets/flags/4x3/jpy-42304b701c7d962db45153d3d62f8a8818cb8b855d9777958daeb12cd26d3000.svg" alt="Jpy" />
+Japanese Yen
+</a></li>
+</ul>
+</div>
+
+<div class='dropdown animated fadeInDown animation-delay-11'>
+<a href='/register'>
+<i class='fa fa-user'></i>
+Create Account
+</a>
+</div>
+
+<div class='dropdown animated fadeInDown animation-delay-11' id='login-top'>
+<a href='/login'>
+<i class='fa fa-sign-in'></i>
+Login
+</a>
+</div>
+
+<div class='dropdown animated fadeInDown animation-delay-13'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+<i class='fa fa-search'></i>
+</a>
+<div class='dropdown-menu dropdown-menu-right dropdown-search-box animated fadeInUp'>
+<form role="form" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<input type="hidden" name="cx" id="cx" value="017936214488234636465:1y6fxh9ymfm" />
+<input type="hidden" name="cof" id="cof" value="FORID:10;NB:1" />
+<input type="hidden" name="ie" id="ie" value="UTF-8" />
+<div class='input-group'>
+<input class='form-control' name='addsearch' placeholder='Search...' type='text'>
+<span class='input-group-btn'>
+<button class='btn btn-ar btn-primary' type='submit'>Go!</button>
+</span>
+</div>
+</form>
+
+</div>
+</div>
+
+</nav>
+<br>
+<br>
+<p class='contact-details animated fadeInRight'>
+<i class='fa fa-phone-square'></i>
+Toll Free: 800-892-7095
+<a class="live-chat" href="#"><i class="fa fa-comment"></i> Live Chat</a>
+</p>
+</div>
+</header>
+
+
+<nav class='navbar navbar-default navbar-header-full navbar-dark yamm navbar-static-top' id='header' role='navigation'>
+<div class='container'>
+<div class='navbar-header'>
+<button class='navbar-toggle' data-target='#bs-example-navbar-collapse-1' data-toggle='collapse' type='button'>
+<span class='sr-only'>Toggle navigation</span>
+<i class='fa fa-bars'></i>
+</button>
+<a class='navbar-brand p-t hidden-lg hidden-md hidden-sm' href='/' id='ar-brand'>
+GeoCerts
+<span>SSL</span>
+</a>
+</div>
+<div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+<ul class='nav navbar-nav'>
+<li class='dropdown yamm-fw'>
+<a id="shop_ssl_fly_menu_link" class="navbar-green dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-expanded="false" href="/ssl-checker?open_shop_ssl=1">Shop SSL <i class="fa fa-chevron-down"></i></a>
+<ul class='dropdown-menu dropdown-menu-left animated-2x animated fadeIn' id='shop_ssl_fly_menu'>
+<li>
+<div class='yamm-content'>
+<div class='row'>
+<div class='col-lg-6 col-md-6 col-sm-6 col-megamenu'>
+<div class='megamenu-block'>
+<div class='megamenu-block-title'>
+Brands
+</div>
+<ul>
+<li><a href="/geotrust"><i class="fak fa-geotrust"></i> GeoTrust</a></li>
+<li><a href="/sectigo"><i class="fak fa-sectigo"></i> Sectigo</a></li>
+<li><a href="/digicert"><i class="fak fa-digicert"></i> DigiCert</a></li>
+<li><a href="/digicert/secure-site"><i class="fak fa-digicert"></i> DigiCert Secure Site</a></li>
+<li><a href="/positivessl"><i class="fak fa-positivessl"></i> PositiveSSL</a></li>
+</ul>
+</div>
+</div>
+<div class='col-lg-6 col-md-6 col-sm-6 col-megamenu'>
+<div class='megamenu-block'>
+<div class='megamenu-block-title'>
+Products
+</div>
+<ul>
+<li><a href="/dv-ssl-certificates"><i class="fak fa-dv-shield"></i> Basic DV SSL</a></li>
+<li><a href="/ov-ssl-certificates"><i class="fak fa-ov-shield"></i> Standard OV SSL</a></li>
+<li><a href="/ev-ssl-certificates"><i class="fak fa-ev-shield"></i> EV SSL</a></li>
+<li><a href="/multidomain-ssl-certificates"><i class="fak fa-md-shield"></i> Multi-Domain SSL</a></li>
+<li><a href="/wildcard-ssl-certificates"><i class="fak fa-wc-shield"></i> Wildcard SSL</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<a href="/resellers">Resellers</a>
+</li>
+<li>
+<a href="/support">Support Desk</a>
+</li>
+<li>
+<a href="/ssl_manager">Renew SSL</a>
+</li>
+<li class='active'>
+<a href="/ssl-tools">SSL Tools</a>
+</li>
+<li>
+<a href="/contact">Contact Us</a>
+</li>
+</ul>
+<ul class='nav navbar-nav secondary-menu'>
+<li class='visible-xs'>
+<a href="/register">Create Account</a>
+</li>
+<li class='visible-xs'>
+<a href="/login">Login</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<header class='main-header'>
+<div class='container'>
+<h1 class='page-title'>SSL Installation Checker</h1>
+<ol class='breadcrumb pull-right'>
+<li><a href="/support">Support Desk</a></li>
+</ol>
+</div>
+</header>
+
+<div id='page-content'>
+
+<div class='container'>
+<div class='row'>
+<div class='col-md-3'>
+<ul class='sidebar-nav animated fadeIn'>
+<li class='active'>
+<a href="/ssl-tools"><i class="fa fa-wrench"></i> SSL Tools</a>
+<ul class='menu-submenu list-unstyled collapse in' id='ssl-tools-menu'>
+<li class='active'>
+<a href="/ssl-checker">SSL Installation Checker</a>
+</li>
+<li>
+<a target="_blank" href="https://geocerts.ssllabs.com/">SSL Labs Server Test</a>
+</li>
+<li>
+<a href="/csr-decoder">CSR Decoder</a>
+</li>
+<li>
+<a href="/certificate-decoder">Certificate Decoder</a>
+</li>
+<li>
+<a href="/certificate-key-matcher">Certificate Key Matcher</a>
+</li>
+</ul>
+</li>
+<li>
+<a class="collapsed" href="/support/generate-csr"><i class="fa fa-file"></i> Generate CSR</a>
+</li>
+<li>
+<a class="collapsed" href="/support/install-ssl"><i class="fa fa-check-square-o"></i> Install SSL</a>
+</li>
+<li>
+<a class="collapsed" href="/support"><i class="fa fa-life-ring"></i> Support Desk</a>
+</li>
+</ul>
+
+</div>
+<div class='col-md-9'>
+<form id="ssl_checker" class="row" data-spinner-image="/assets/spinner_circle-3c98cef815b17bfb6a32364aca4e65bacb334850b0466a793d18967d71bb50da.gif" data-spinner-id="spinner_form" action="/ssl-checker" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="ZRAw0SHZcZDo5AGpgNdfWAFBINEw3qEgX+x6FX92CYE+ipD+PyEOhXTktWJuTtjuSnucy6NxPh10tRJSmuEx5g==" />
+<div class='row'>
+<div class='col-md-12'>
+<p>Verify that your SSL certificate is installed correctly on your server.</p>
+</div>
+</div>
+<div class='row'>
+<div class='col-md-4'>
+<label for='domain'>URL</label>
+<input type="text" name="domain" id="domain" class="form-control m-b-xs" placeholder="www.domain.com" />
+<input name='s' type='hidden' value='1'>
+<div id="spinner_form" style="display: none; margin: 0px;"><img id="spinner_form" alt="Working..." src="/assets/spinner_circle-3c98cef815b17bfb6a32364aca4e65bacb334850b0466a793d18967d71bb50da.gif" /> Working, please wait...</div>
+<button class='btn btn-block btn-primary p-x-0' id='submit' type='submit'>
+Check SSL
+</button>
+</div>
+<div class='col-md-2'>
+<label for='port'>Port</label>
+<input type="text" name="port" id="port" value="443" class="form-control " />
+</div>
+<div class='col-md-5'>
+</div>
+</div>
+</form>
+
+
+</div>
+</div>
+</div>
+<div aria-hidden='true' aria-labelledby='productModal' class='modal fade' id='productModal' role='dialog' tabindex='-1'>
+<div class='modal-dialog' role='document'>
+<div class='modal-content'></div>
+</div>
+</div>
+
+
+</div>
+<aside id='footer-widgets'>
+<div class='container'>
+<div class='row'>
+<div class='col-md-6'>
+<div class='row'>
+<div class='col-md-6'>
+<h3 class='footer-widget-title'>
+<a href="/products">Shop SSL/TLS Certificates</a>
+</h3>
+<ul class='list-unstyled'>
+<li>
+<a href="/dv-ssl-certificates">Basic DV SSL</a>
+</li>
+<li>
+<a href="/ov-ssl-certificates">Standard OV SSL</a>
+</li>
+<li>
+<a href="/wildcard-ssl-certificates">Wildcard SSL</a>
+</li>
+<li>
+<a href="/multidomain-ssl-certificates">Multi-Domain SAN SSL</a>
+</li>
+<li>
+<a href="/ev-ssl-certificates">Extended Validation (EV) SSL</a>
+</li>
+</ul>
+</div>
+<div class='col-md-6'>
+<h3 class='footer-widget-title'>
+<a href="/ssl/brands">Shop by Brand</a>
+</h3>
+<ul class='list-unstyled'>
+<li>
+<a href="/geotrust">GeoTrust SSL</a>
+</li>
+<li>
+<a href="/sectigo">Sectigo (formerly Comodo) SSL</a>
+</li>
+<li>
+<a href="/digicert">DigiCert SSL</a>
+</li>
+<li>
+<a href="/digicert/secure-site">DigiCert Secure Site SSL</a>
+</li>
+<li>
+<a href="/positivessl">PositiveSSL</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class='col-md-6'>
+<div class='row'>
+<div class='col-md-6'>
+<h3 class='footer-widget-title'>
+<a href="/support">Resources</a>
+</h3>
+<ul class='list-unstyled'>
+<li>
+<a href="/contact">Contact Us</a>
+</li>
+<li>
+<a href="/support">Support Desk</a>
+</li>
+<li>
+<a href="/ssl-tools">SSL Tools</a>
+</li>
+<li>
+<a href="/ssl_manager">Renew SSL</a>
+</li>
+<li>
+<a href="/cancellation-and-refund-policy">Refund &amp; Cancellation Policy</a>
+</li>
+<li>
+<a href="/resellers">Resellers</a>
+</li>
+<li>
+<a href="/blog">Blog</a>
+</li>
+<li>
+<a href="/privacy-policy">Privacy Policy</a>
+</li>
+<li>
+<a href="/cookie-policy">Cookie Policy</a>
+</li>
+</ul>
+</div>
+<div class='col-md-6'>
+<h3 class='footer-widget-title'>
+<a href="/blog">Recent Posts</a>
+</h3>
+<div class='media'>
+<div class='media-body'>
+<a href="/blog/how-to-use-an-ssl-certificate-on-multiple-servers">How to install an SSL certificate on multiple servers
+<br>
+<small>Nov 5, 2021</small>
+</a></div>
+</div>
+<div class='media'>
+<div class='media-body'>
+<a href="/blog/7-tips-that-will-help-protect-your-website-guests-data-with-ssl-certificate">7 Tips That Will Help Protect Your Website Guests' Data With SSL Certificate
+<br>
+<small>Aug 9, 2021</small>
+</a></div>
+</div>
+<div class='media'>
+<div class='media-body'>
+<a href="/blog/what-geocerts-is-doing-to-combat-ransomware">What GeoCerts is doing to combat ransomware
+<br>
+<small>Jun 9, 2021</small>
+</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- row -->
+</div>
+<!-- container -->
+</aside>
+<!-- footer-widgets -->
+<footer id='footer'>
+<div class='row'>
+<div class='col-md-6'>
+<!-- DigiCert Seal HTML -->
+<!-- Place HTML on your site where the seal should appear -->
+<div id="DigiCertClickID_npkXUaWu" class="site-seal"></div>
+
+<!-- DigiCert Seal Code -->
+<!-- Place with DigiCert Seal HTML or with other scripts -->
+<script type="text/javascript">
+  var __dcid = __dcid || [];
+  __dcid.push({"cid":"DigiCertClickID_npkXUaWu","tag":"npkXUaWu"});
+  (function(){var cid=document.createElement("script");cid.async=true;cid.src="//seal.digicert.com/seals/cascade/seal.min.js";var s = document.getElementsByTagName("script");var ls = s[(s.length - 1)];ls.parentNode.insertBefore(cid, ls.nextSibling);}());
+</script>
+
+</div>
+<div class='col-md-6'>
+<p class='copyright'>
+©
+2022
+<a href='#'>GeoCerts SSL. All Rights Reserved.</a>
+</p>
+</div>
+</div>
+</footer>
+
+</div>
+</div>
+
+<div id='back-top'>
+<a href="#header"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+<!-- Start of geocerts Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4ce8ad07-fe23-4b1b-80e1-079d2b33c39d"> </script>
+<!-- End of geocerts Zendesk Widget script -->
+
+<script type="text/javascript">
+  window.zESettings = {
+    webWidget: {
+      chat: {
+        departments: {
+          enabled: []
+        }
+      }
+    }
+  };
+</script>
+
+<!-- https://support.zendesk.com/hc/en-us/articles/204172316-Auto-fill-the-Web-Widget-Contact-Form -->
+
+<div id="live-chat-missing" class="modal" aria-hidden="true" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" aria-label="Close" data-dismiss="modal" type="button">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title">Live Chat not available</h4>
+      </div>
+      <div class="modal-body">
+          <p>You may have 3rd party cookies disabled which prevents our chat system from loading properly. Please contact us at <a href="mailto:team@geocerts.com">team@geocerts.com</a>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#237afc"
+    },
+    "button": {
+      "background": "#fff",
+      "text": "#237afc"
+    }
+  },
+  "position": "bottom",
+  "content": {
+    "message": "<span class='cc-message-header'>GeoCerts' Use of Cookies</span>GeoCerts uses cookies to enhance your experience, to display customized content in accordance with your browser settings, and to help us better understand how you use our website. By continuing to browse or closing this cookie consent notice, you indicate your agreement. To learn more about the cookies we use see our",
+    "dismiss": "Got it!",
+    "link": "Cookies Policy.",
+    "href": "/cookie-policy"
+  }
+})});
+</script>
+
+</body>
+</html>
